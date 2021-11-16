@@ -1,5 +1,5 @@
 function userPick (){
-	var userPick = prompt("Choose rock, paper or scissors").toLowerCase();
+	var userPick = document.getElementById("fromName").value;
 	return userPick
 }
 
