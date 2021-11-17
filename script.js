@@ -1,8 +1,17 @@
-function userPick (){
-	var userPick = document.getElementById("fromName").value;
-	return userPick
-}
+const resultDisplay = document.getElementById("result")
+const computerPickDisplay = document.getElementById("computerPick")
+const userPickDisplay = document.getElementById("userPick")
+const resultDisplay = document.getElementById('result')
 
+
+//fuction to take user pick from buttons 
+
+
+
+
+
+
+//fuction to generate computer pick
 function computerPick (){
 	let computerPick=Math.random()*100;
 		if (computerPick <33) {
@@ -12,34 +21,35 @@ function computerPick (){
 		}else{
 		computerPick="scissors";
 		}
-		return computerPick
+		computerPickDisplay.interHTML =computerPick;
 }
 
-//set-up function for game
+//set-up function for game, which contains the if logic for each choice the user can make
 function playGame (){
 //code for rock choice
 	if (userPick == "rock" && computerPick == "rock"){
-		return "Draw";
+		result = "Draw";
 	} else if (userPick == "rock" && computerPick == "paper"){
-		return "Computer wins! paper beats rock";
+		result = "Computer wins! paper beats rock";
 	} else if (userPick == "rock" && computerPick == "scissors"){
-		return "Player wins! rock beats scissors;
+		result = "Player wins! rock beats scissors;
 }
 
 //code for paper choice
 if (userPick == "paper" && computerPick == "rock"){
-		return "Player wins! paper beats rock";
+		result "Player wins! paper beats rock";
 	} else if (userPick == "paper" && computerPick == "paper"){
-		return "Draw";
+		result "Draw";
 	} else if (userPick == "paper" && computerPick == "scissors"){
-		return "Computer wins! scissors beats paper;
+		result "Computer wins! scissors beats paper;
 }
 
 //code for scissors
 if (userPick == "scissors" && computerPick == "rock"){
-		return "Computer wins! rock beats scissors";
+		result "Computer wins! rock beats scissors";
 	} else if (userPick == "scissors" && computerPick == "paper"){
-		return "Player wins! scissors beats paper";
+		result "Player wins! scissors beats paper";
 	} else if (userPick == "scissors" && computerPick == "scissors"){
-		return "Draw";
+		result "Draw";
+		resultDisplay.innerHTML = result
 }

@@ -16,7 +16,12 @@ body {
     align-items: center;
 }
 
-
+h2{
+	margin-top: 1rem;
+	display: flex;
+	font-size: 1rem;
+}
+	
 
 .title {
 	display: flex;
@@ -26,9 +31,17 @@ body {
 .move {
 	display: flex;
 	font-size: 2rem;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 	
 }
+
+#result{
+	margin-top: 1rem;
+	display: flex;
+	font-weight: bold;
+	font-size: 1rem;
+}
+	
 
 
 .rock, .paper, .scissors{
